@@ -1,6 +1,6 @@
 EXPECTED="Hello, Test!" # expected output
 
-OUTPUT=$(node -e "console.log(require('./src/app.js')('Test'))") # run app.js with Test as argument
+OUTPUT=$(node -e "console.log(require('./src/app')('Test'))") # run app.js with Test as argument
 
 if [ "$OUTPUT" = "$EXPECTED" ]; then
     echo "Test passed" # print message if test passed
