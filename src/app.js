@@ -5,6 +5,6 @@ function great(name) {
 
 module.exports = great; // export function great
 
-if (require.main === module) {  // if run file directly  
-    console.log(great("world")); // Hello world
-}
+// if (require.main === module) {  // if run file directly  
+//     console.log(great("world")); // Hello world
+// }
