@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set up api key 
-      run: echo "API_KY=123" >> $GITHUB_ENV
+      run: echo "API_KEY=123" >> $GITHUB_ENV
 
     - name: use API key
-      run: exho "USing API KEy $API_KEY"
+      run: echo "USing API KEy $API_KEY"
 
   
     # runs-on: ubuntu-latest 
