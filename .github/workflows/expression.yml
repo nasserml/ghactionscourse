@@ -1,0 +1,10 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  expressions:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print A Message
+      run: echo "the job is running"
+      if: ${{ startsWith(github.ref, 'refs/tags/v') }} # success() failuer()  always
